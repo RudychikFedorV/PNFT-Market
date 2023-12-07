@@ -1,0 +1,103 @@
+.auth-form {
+  margin-left: 108px;
+  max-width: 360px;
+
+  &__title {
+    color: #344054;
+    /* Headline */
+    font-family: var(--ff);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+  &__text {
+    color: #667085;
+    /* Text 1 */
+    font-family: var(--ff);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 56px;
+  }
+  &__registration {
+    color: #344054;
+    /* Text 2 */
+    font-family: var(--ff);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  &__input {
+    color: #667085;
+    /* Text 1 */
+    font-family: var(--ff);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #d0d5dd;
+  }
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #d0d5dd;
+  }
+  &__remember {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  &__rememberMe {
+    color: #344054;
+    /* Text 2 */
+    font-family: var(--ff);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__forgotPassword {
+    color: #5429ff;
+    /* Text 2 */
+    font-family: var(--ff);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    justify-content: end;
+    display: flex;
+  }
+  &__sing {
+    color: #fff;
+    font-family: var(--ff);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    background: #5429ff;
+    padding: 12px 154px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+   &__google {
+    display: flex;
+  }
+  &__imgGoogle {
+    max-width: 24px;
+    max-height: 24px;
+  }
+  &__signGoogle {
+    
+  }
+}
