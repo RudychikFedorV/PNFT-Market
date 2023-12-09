@@ -14,16 +14,18 @@
         <input type="password" name="userpass" placeholder="Userpass">
     </div>
     <div class="auth-form__remember">
-        <div class="auth-form__rememberMe">
-            <input type="checkbox" name="remember" value="yes"> Remember me
-        </div>
+        <label class="auth-form__chk">
+            <input class="auth-form__inp" type="checkbox" name="remember" value="yes">
+            <span class="auth-form__check"></span>
+            <span class="auth-form__rememberMe">Remember me</span>
+        </label>
         <div class="auth-form__forgotPassword">
             <a href="/">Forgot Password?</a>
         </div>
     </div>
     <a href="/" class="auth-form__sing btn">Sign in</a>
 
-    <a href="/" class="auth-form__google">
+    <a href="https://www.google.com/" class="auth-form__google">
         <img src="./assets/google.svg" alt="Google">
         <p class="auth-form__signGoogle">Sign in with Google</p>
     </a>

@@ -1,16 +1,15 @@
-// @import 'vars';
+@import 'vars';
+
 .auth-header {
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 8px;
-  margin-bottom: 156px;
+  margin-bottom: 65px;
 
   &__text {
-    color: #000;
-    font-family: var(--ff);
-    font-size: 16px;
-    font-weight: 500;
+    color: $black;
+    font: var(--Text-3);
     letter-spacing: 0.16px;
     padding-bottom: 8px;
     padding-left: 8px;
