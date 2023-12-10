@@ -3,12 +3,14 @@ $desktop-small: 1200px;
 $tablet: 992px;
 $tablet-small: 768px;
 $mobile: 576px;
+$mobile-small: 320px;
 
 :root {
   --ff: "Inter", sans-serif;
   --Accent-1: 400 14px / normal var(--ff);
   --Accent-2: 400 16px / normal var(--ff);
   --Headline: 700 40px / normal var(--ff);
+  --Headline-2: 700 32px / normal var(--ff);
   --Text-2: 500 14px / normal var(--ff);
   --Text-3: 500 16px / normal var(--ff);
 }

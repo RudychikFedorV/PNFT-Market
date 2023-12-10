@@ -1,9 +1,17 @@
+@import "vars";
+@import "mixins";
+
 .auth {
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
     padding: 32px;
     gap: 140px;
+    
+    @include mobile {
+        padding: 24px;
+        
+      }
 }
 
 .auth-info {

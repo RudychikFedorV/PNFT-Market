@@ -1,8 +1,14 @@
 @import "vars";
+@import "mixins";
 
 .auth-form {
   margin-left: 108px;
   max-width: 360px;
+
+  @include mobile {
+    margin-left: 0px;
+    max-width: 272px;
+  }
 
   &__title {
     color: $secondaryColor;
@@ -10,12 +16,20 @@
     letter-spacing: 0.4px;
     text-transform: capitalize;
     margin-bottom: 8px;
+
+    @include mobile {
+      font: var(--Headline-2);
+    }
   }
   &__text {
     color: $accent2;
     font: var(--Accent-2);
     line-height: 24px;
     margin-bottom: 56px;
+
+    @include mobile {
+      font: var(--Accent-1);
+    }
   }
   &__registration {
     color: $secondaryColor;
@@ -28,19 +42,28 @@
     font: var(--Accent-2);
     line-height: 24px;
     margin-bottom: 20px;
+    position: relative;
+    width: 100%;
   }
-
+  .material-icons {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    color: $accent2;
+  }
   input[type="email"] {
     width: 100%;
     padding: 10px 14px;
     border-radius: 8px;
-    border: 1px solid $white-1;
+    border: 2px solid $white-1;
   }
   input[type="password"] {
     width: 100%;
     padding: 10px 14px;
     border-radius: 8px;
-    border: 1px solid $white-1;
+    border: 2px solid $white-1;
   }
   &__remember {
     display: flex;
@@ -74,7 +97,7 @@
   &__check {
     width: 16px;
     height: 16px;
-    border: 1px solid $accent2;
+    border: 2px solid $accent2;
     border-radius: 4px;
     background: transparent;
     transition: 0.2s all ease-in;
@@ -103,6 +126,12 @@
     background: $primaryColor;
     padding: 12px 154px;
     margin-bottom: 16px;
+    &:hover {
+      background: lighten(#5429ff, 5%);
+    }
+    @include mobile {
+      padding: 12px 110px;
+    }
   }
   .btn {
     border-radius: 8px;
@@ -115,16 +144,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid $white-1;
+    border: 2px solid $white-1;
     padding: 10px 20px;
     border-radius: 8px;
     gap: 8px;
     margin-bottom: 20px;
+    &:hover {
+      background: lighten(#667085, 5%);
+    }
   }
   &__signGoogle {
     color: $secondaryColor;
     font: var(--Text-3);
     line-height: 20px;
+    
   }
   &__signUp {
     color: $secondaryColor;
