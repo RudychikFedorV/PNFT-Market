@@ -3,11 +3,11 @@
 
 .auth-form {
   margin-left: 108px;
-  max-width: 360px;
+  flex-shrink: 0;
 
   @include mobile {
     margin-left: 0px;
-    max-width: 272px;
+ 
   }
 
   &__title {
@@ -105,14 +105,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
   }
   &__rememberMe {
     color: $secondaryColor;
     font: var(--Text-2);
     line-height: 20px;
     cursor: pointer;
-
   }
   &__forgotPassword {
     color: $primaryColor;
@@ -124,31 +122,26 @@
     font: var(--Text-3);
     line-height: 20px;
     background: $primaryColor;
-    padding: 12px 154px;
+    padding: 12px;
     margin-bottom: 16px;
+
     &:hover {
       background: lighten(#5429ff, 5%);
     }
-    @include mobile {
-      padding: 12px 110px;
-    }
   }
   .btn {
-    border-radius: 8px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  &__google {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid $white-1;
-    padding: 10px 20px;
     border-radius: 8px;
+    cursor: pointer;
+  }
+  &__google {
+    padding: 10px;
     gap: 8px;
     margin-bottom: 20px;
+
     &:hover {
       background: lighten(#667085, 5%);
     }
@@ -157,13 +150,20 @@
     color: $secondaryColor;
     font: var(--Text-3);
     line-height: 20px;
-    
   }
   &__signUp {
     color: $secondaryColor;
     font: var(--Accent-1);
     text-align: center;
     line-height: 24px;
-    margin-bottom: 62px;
+    margin-bottom: 162px;
+
+    @include desktop-small {
+      margin-bottom: 99px;
+    }
+
+    @include mobile {
+      margin-bottom: 85px;
+    }
   }
 }

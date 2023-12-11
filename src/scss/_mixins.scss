@@ -23,8 +23,8 @@
     }
   }
   
-  @mixin mobile-small {
-      @media (max-width: $mobile-small) {
-          @content;
-      }
-  }
+  // @mixin mobile-small {
+  //     @media (max-width: $mobile-small) {
+  //         @content;
+  //     }
+  // }

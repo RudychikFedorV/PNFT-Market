@@ -1,7 +1,7 @@
 @import "vars";
 @import "mixins";
 
-.auth-img {
+.auth-imges {
   max-width: 736px;
   img {
     max-width: 100%;
@@ -10,16 +10,8 @@
     flex-shrink: 0;
   }
   
-  @include tablet-small {
+  @include desktop-small {
     display: none;
   }
-  @include tablet {
-    display: none;
-  }
-  @include mobile {
-    display: none;
-  }
-  @include mobile-small {
-    display: none;
-  }
+   
 }

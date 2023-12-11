@@ -6,7 +6,11 @@
   align-items: center;
   gap: 12px;
   padding: 8px;
-  margin-bottom: 65px;
+  margin-bottom: 149px;
+
+  @include desktop-small {
+    margin-bottom: 99px;
+  }
 
   @include mobile {
     padding-top: 88px;
